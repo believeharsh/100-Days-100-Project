@@ -6,7 +6,7 @@
 
 :root {
 	--mood-color-1: #2d6b5f;
-	--mood-color-2: #72e3a6;
+	--mood-color-2: #35ffec;
 	--mood-color-3: #dff4c7;
 	--mood-color-4: #edbf98;
 	--mood-color-5: #ea3d36;
@@ -15,6 +15,7 @@
 body {
 	font-family: 'Muli';
 	margin: 0px 0;
+	background-color: #140448;
 }
 .navbar{
     display: flex;
@@ -31,16 +32,24 @@ body {
    
  
 }
-
+#personal-branding {
+	position: relative;
+    left: 27px;
+    font-weight: bolder;
+    font-size: 15px;
+	cursor: pointer;
+}
 #project-num{
-  margin-left: 23%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
+	margin-left: 23%;
+    font-weight: bolder;
+    font-size: 27px;
+	cursor: pointer;
 }
 #project-name{
     margin-right: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
+	font-weight: bolder;
+    font-size: 27px;
+	cursor: pointer;
 }
 
 
@@ -59,10 +68,29 @@ p {
 
 .container {
 	max-width: 1000px;
-	margin: 0 auto;
-	padding: 0 30px;
-	text-align: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+    color: white;
 }
+#project-sNo{
+	border-radius: 0px 16px 16px 0px;
+    padding: 3px 20px 3px 25px;
+    font-size: 40px;
+    border: 2px solid #67dffe;
+    position: fixed;
+    left: -1%;
+
+}
+#project-sNo:hover{
+	font-size: 42px;
+    background-color: #67dffe;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid white;
+
+}
+
 
 .moods_container {
 	display: flex;
@@ -172,16 +200,17 @@ p {
 }
 
 .days .circle {
-	background-color: #888;
-	border-radius: 50%;
-	color: #fff;
-	cursor: pointer;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 10px;
-	width: 20px;
-	height: 20px;
+	background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .days .circle:hover {
@@ -189,17 +218,18 @@ p {
 }
 
 .action_btn {
-	border-radius: 10px 0 0 10px;
-	border: none;
-	color: #fff;
-	cursor: pointer;
-	font-size: 14px;
-	padding: 8px 12px;
-	margin: 0;
-	position: fixed;
-	right: 0;
-	top: 40px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 15px 20px;
+    margin: 0;
+    position: fixed;
+    right: 0px;
+    top: 80px;
 }
+
 
 .action_btn:active {
 	transform: scale(0.9);
@@ -215,7 +245,7 @@ p {
 
 .clear {
 	background-color: #888;
-	top: 80px;
+	top: 116px;
 }
 
 /* SOCIAL PANEL CSS */
