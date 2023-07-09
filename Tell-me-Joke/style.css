@@ -16,21 +16,54 @@ body{
     position: relative;
 
 }
-.navbar {
+.navbar p{
     color: black;
     font-size: 25px;
+    
+   
+ 
 }
-
+#personal-branding {
+	position: relative;
+    left: 27px;
+    font-weight: bolder;
+    font-size: 15px;
+	cursor: pointer;
+    font-family: '';
+}
 #project-num{
-  margin-left: 23%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
+	margin-left: 23%;
+    font-weight: bolder;
+    font-size: 27px;
+	cursor: pointer;
+    font-family: '';
 }
-
 #project-name{
     margin-right: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
+	font-weight: bolder;
+    font-size: 27px;
+	cursor: pointer;
+    font-family: '';
+}
+
+
+#project-sNo{
+	border-radius: 0px 16px 16px 0px;
+    padding: 3px 20px 3px 25px;
+    font-size: 40px;
+    border: 2px solid #67dffe;
+    position: fixed;
+    left: -1%;
+    top: 23%;
+
+}
+#project-sNo:hover{
+	font-size: 42px;
+    background-color: #67dffe;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid white;
+
 }
 
 .wrapper{
