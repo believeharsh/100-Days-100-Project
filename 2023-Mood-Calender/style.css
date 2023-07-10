@@ -17,38 +17,43 @@ body {
 	margin: 0px 0;
 	background-color: #140448;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    width: 100%;
-    position: relative;
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	width: 100%;
+	position: relative;
 
 }
-.navbar p{
-    color: black;
-    font-size: 25px;
-    
-   
- 
+
+.navbar p {
+	color: black;
+	font-size: 25px;
+
+
+
 }
+
 #personal-branding {
 	position: relative;
-    left: 27px;
-    font-weight: bolder;
-    font-size: 15px;
-	cursor: pointer;
-}
-#project-num{
-	margin-left: 23%;
-    font-weight: bolder;
-    font-size: 27px;
-	cursor: pointer;
-}
-#project-name{
-    margin-right: 20%;
+	left: 27px;
 	font-weight: bolder;
-    font-size: 27px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#project-num {
+	margin-left: 23%;
+	font-weight: bolder;
+	font-size: 27px;
+	cursor: pointer;
+}
+
+#project-name {
+	margin-right: 20%;
+	font-weight: bolder;
+	font-size: 27px;
 	cursor: pointer;
 }
 
@@ -68,26 +73,28 @@ p {
 
 .container {
 	max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 30px;
-    text-align: center;
-    color: white;
+	margin: 0 auto;
+	padding: 0 30px;
+	text-align: center;
+	color: white;
 }
-#project-sNo{
+
+#project-sNo {
 	border-radius: 0px 16px 16px 0px;
-    padding: 3px 20px 3px 25px;
-    font-size: 40px;
-    border: 2px solid #67dffe;
-    position: fixed;
-    left: -1%;
+	padding: 3px 20px 3px 25px;
+	font-size: 40px;
+	border: 2px solid #67dffe;
+	position: fixed;
+	left: -1%;
 
 }
-#project-sNo:hover{
+
+#project-sNo:hover {
 	font-size: 42px;
-    background-color: #67dffe;
-    color: black;
-    font-weight: bolder;
-    border: 2px solid white;
+	background-color: #67dffe;
+	color: black;
+	font-weight: bolder;
+	border: 2px solid white;
 
 }
 
@@ -169,13 +176,13 @@ p {
 
 @media screen and (max-width: 756px) {
 	.months {
-		width: 50%;	
+		width: 50%;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.months {
-		width: 100%;	
+		width: 100%;
 	}
 }
 
@@ -201,16 +208,16 @@ p {
 
 .days .circle {
 	background-color: #fff;
-    border-radius: 50%;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    width: 20px;
-    height: 20px;
+	border-radius: 50%;
+	color: #000;
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	width: 20px;
+	height: 20px;
 }
 
 .days .circle:hover {
@@ -218,16 +225,16 @@ p {
 }
 
 .action_btn {
-    border-radius: 10px 0 0 10px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 15px 20px;
-    margin: 0;
-    position: fixed;
-    right: 0px;
-    top: 80px;
+	border-radius: 10px 0 0 10px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 15px 20px;
+	margin: 0;
+	position: fixed;
+	right: 0px;
+	top: 80px;
 }
 
 
@@ -249,7 +256,9 @@ p {
 }
 
 /* SOCIAL PANEL CSS */
-.social-panel-container {
+
+/* SOCIAL PANEL CSS */
+.floating-container {
 	position: fixed;
 	right: 0;
 	bottom: 80px;
@@ -257,29 +266,30 @@ p {
 	transition: transform 0.4s ease-in-out;
 }
 
-.social-panel-container.visible {
+.floating-container.visible {
 	transform: translateX(-10px);
 }
 
-.social-panel {	
-	background-color: #fff;
-	border-radius: 16px;
-	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
-	border: 5px solid #001F61;
+.social-media-panel {
+	background-color: #3cdbff;
+	border-radius: 18px 1px 1px 18px;
+	box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+	border: 2px solid #000000;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Muli';
+	font-family: "Muli";
 	position: relative;
-	height: 169px;	
-	width: 370px;
-	max-width: calc(100% - 10px);
+	height: 235px;
+	width: 52px;
+	/* max-width: calc(100% - 10px); */
+	right: -25%;
 }
 
-.social-panel button.close-btn {
+.social-media-panel button.close-btn {
 	border: 0;
-	color: #97A5CE;
+	color: #97a5ce;
 	cursor: pointer;
 	font-size: 20px;
 	position: absolute;
@@ -287,12 +297,12 @@ p {
 	right: 5px;
 }
 
-.social-panel button.close-btn:focus {
+.social-media-panel button.close-btn:focus {
 	outline: none;
 }
 
-.social-panel p {
-	background-color: #001F61;
+.social-media-panel p {
+	background-color: #001f61;
 	border-radius: 0 0 10px 10px;
 	color: #fff;
 	font-size: 14px;
@@ -307,20 +317,20 @@ p {
 	width: 235px;
 }
 
-.social-panel p i {
+.social-media-panel p i {
 	margin: 0 5px;
 }
 
 .social-panel p a {
-	color: #FF7500;
+	color: #ff7500;
 	text-decoration: none;
 }
 
-.social-panel h4 {
+.social-media-panel h4 {
 	margin: 20px 0;
-	color: #97A5CE;	
-	font-family: 'Muli';	
-	font-size: 14px;	
+	color: #97a5ce;
+	font-family: "Muli";
+	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
 }
@@ -332,33 +342,36 @@ p {
 	margin: 0;
 }
 
-.social-panel ul li {
+.social-media-panel ul li {
 	margin: 0 10px;
+	list-style: none;
 }
 
-.social-panel ul li a {
-	border: 1px solid #DCE1F2;
+.social-media-panel ul li a {
+	border: 1px solid #dce1f2;
 	border-radius: 50%;
-	color: #001F61;
-	font-size: 20px;
+	color: #000000;
+	font-size: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
-	width: 50px;
+	height: 35px;
+	width: 35px;
 	text-decoration: none;
+	margin-right: 36px;
+	margin-bottom: 4px;
 }
 
-.social-panel ul li a:hover {
-	border-color: #FF6A00;
-	box-shadow: 0 9px 12px -9px #FF6A00;
+.social-media-panel ul li a:hover {
+	border-color: #ff6a00;
+	box-shadow: 0 9px 12px -9px #ff6a00;
 }
 
 .floating-btn {
 	border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
+	background-color: #001f61;
+	border: 1px solid #001f61;
+	box-shadow: 0 16px 22px -17px #03153b;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
@@ -372,35 +385,19 @@ p {
 
 .floating-btn:hover {
 	background-color: #ffffff;
-	color: #001F61;
+	color: #001f61;
 }
 
 .floating-btn:focus {
 	outline: none;
 }
 
-.floating-text {
-	background-color: #001F61;
-	border-radius: 10px 10px 0 0;
-	color: #fff;
-	font-family: 'Muli';
-	padding: 7px 15px;
-	position: fixed;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.floating-text a {
-	color: #FF7500;
-	text-decoration: none;
-}
 
 @media screen and (max-width: 480px) {
 	.social-panel-container.visible {
 		transform: translateX(0px);
 	}
-	
+
 	.floating-btn {
 		right: 10px;
 	}
