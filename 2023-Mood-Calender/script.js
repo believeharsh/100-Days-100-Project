@@ -1,4 +1,4 @@
-const currentYear = 2019;
+const currentYear = 2023;
 const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const months = [
 	'January',
@@ -51,7 +51,7 @@ const getAllDays = year => {
 
 	// Used to keep track of the day
 	let lastDayInArray = firstDay;
-	
+
 	// Loop while there are new days to be added in the current year
 	while (lastDayInArray.getTime() !== lastDay.getTime()) {
 		days.push(addDays(lastDayInArray, 1));
@@ -71,8 +71,8 @@ months.forEach((month, idx) => {
         <h3>${month}</h3>
         <div class="week_days_container">
             ${weekDays
-							.map(day => `<div class="week_days">${day}</div>`)
-							.join('')}
+			.map(day => `<div class="week_days">${day}</div>`)
+			.join('')}
         </div>
         <div class="days_container"></div>
     </div>`;
