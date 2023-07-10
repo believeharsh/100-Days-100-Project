@@ -1,105 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mood-Calander</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="navbar">
-        <h3 id="personal-branding">Harsh Dahiya</h3>
-        <p id="project-num">100 Projects</p>
-        <p id="project-name"> Mood-Calander</p>
+      <h3 id="personal-branding">Harsh Dahiya</h3>
+      <p id="project-num">100 Projects</p>
+      <p id="project-name">Mood-Calander</p>
     </div>
 
     <div class="container">
-        <button id="project-sNo">3</button>
-        <h2>2023 Mood Calendar</h2>
-        <h4>~ color each day depending on what your mood was / is ~</h4>
-        <p>Select mood:</p>
-        <div class="moods_container">
-            <button class="mood mood_1" id="mood_1">
-                <i class="far fa-laugh"></i>
-            </button>
-            <button class="mood mood_2" id="mood_2">
-                <i class="far fa-smile"></i>
-            </button>
-            <button class="mood mood_3" id="mood_3">
-                <i class="far fa-meh"></i>
-            </button>
-            <button class="mood mood_4" id="mood_4">
-                <i class="far fa-frown"></i>
-            </button>
-            <button class="mood mood_5" id="mood_5">
-                <i class="far fa-sad-tear"></i>
-            </button>
-        </div>
-        <p>then click on the circles below</p>
-        <button id="randomize" class="action_btn randomize">
-            <i class="fas fa-random"></i>
+      <button id="project-sNo">3</button>
+      <h2>2023 Mood Calendar</h2>
+      <h4>~ color each day depending on what your mood was / is ~</h4>
+      <p>Select mood:</p>
+      <div class="moods_container">
+        <button class="mood mood_1" id="mood_1">
+          <i class="far fa-laugh"></i>
         </button>
-        <button id="clear" class="action_btn clear">
-            <i class="fas fa-sync"></i>
+        <button class="mood mood_2" id="mood_2">
+          <i class="far fa-smile"></i>
         </button>
-        <div id="calendar" class="calendar"></div>
+        <button class="mood mood_3" id="mood_3">
+          <i class="far fa-meh"></i>
+        </button>
+        <button class="mood mood_4" id="mood_4">
+          <i class="far fa-frown"></i>
+        </button>
+        <button class="mood mood_5" id="mood_5">
+          <i class="far fa-sad-tear"></i>
+        </button>
+      </div>
+      <p>then click on the circles below</p>
+      <button id="randomize" class="action_btn randomize">
+        <i class="fas fa-random"></i>
+      </button>
+      <button id="clear" class="action_btn clear">
+        <i class="fas fa-sync"></i>
+      </button>
+      <div id="calendar" class="calendar"></div>
     </div>
-    
-    <!-- SOCIAL PANEL HTML -->
-   
-</head>
 
+ 
 
-<body>
     <!-- get in touch section -->
     <div class="floating-container">
-        <div class="social-media-panel">
-
-         
-
-            <ul>
-                <li>
-                    <a href="https://twitter.com/florinpop1705" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/florinpop17" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://facebook.com/florinpop17" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/florinpop17" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="social-media-panel">
+        <ul>
+          <li>
+            <a href="https://twitter.com/florinpop1705" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/florinpop17" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/florinpop17" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/florinpop17" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <button class="floating-btn">Get in Touch</button>
 
     <script>
-        // SOCIAL PANEL JS
-        const floating_btn = document.querySelector(".floating-btn");
-        const close_btn = document.querySelector(".close-btn");
-        const floating_container = document.querySelector(".floating-container");
+      // SOCIAL PANEL JS
+      const floating_btn = document.querySelector(".floating-btn");
+      const close_btn = document.querySelector(".close-btn");
+      const floating_container = document.querySelector(".floating-container");
 
-        floating_btn.addEventListener("click", () => {
-            floating_container.classList.toggle("visible");
-        });
+      floating_btn.addEventListener("click", () => {
+        floating_container.classList.toggle("visible");
+      });
 
-        close_btn.addEventListener("click", () => {
-            floating_container.classList.remove("visible");
-        });
+      close_btn.addEventListener("click", () => {
+        floating_container.classList.remove("visible");
+      });
     </script>
-    
-<script src="script.js"></script>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
