@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width">
     <title>Random-Meal-Genetor</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 
 <body>
@@ -28,6 +32,51 @@
         </div>
         <div id="meal" class="row meal"></div>
     </div>
+
+    
+    <!-- get in touch section -->
+    <div class="floating-container">
+        <div class="social-media-panel">
+          <ul>
+            <li>
+              <a href="https://twitter.com/florinpop1705" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/florinpop17" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/florinpop17" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="floating-btn">Get in Touch</button>
+  
+      <script>
+        // SOCIAL PANEL JS
+        const floating_btn = document.querySelector(".floating-btn");
+        const close_btn = document.querySelector(".close-btn");
+        const floating_container = document.querySelector(".floating-container");
+  
+        floating_btn.addEventListener("click", () => {
+          floating_container.classList.toggle("visible");
+        });
+  
+        close_btn.addEventListener("click", () => {
+          floating_container.classList.remove("visible");
+        });
+      </script>
     <script src="script.js"></script>
 
     <!--
