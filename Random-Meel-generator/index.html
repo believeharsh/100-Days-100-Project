@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Random-Meal-Genetor</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body>
+    <div class="navbar">
+        <h3 id="personal-branding">Harsh Dahiya</h3>
+        <p id="project-num">100 Projects</p>
+        <p id="project-name">Rendom-Meal-Genetor</p>
+    </div>
+    <button id="project-sNo">2</button>
+    <div class="container">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbDfy9XJBAauDV7PgWbMYk8rycK3xNlcXZA&usqp=CAU">
+        <div class="row text-center">
+            <h3>
+                Are you hungry?
+            </h3>
+            <h5>Get a random meal by clicking below</h5>
+            <button class="button-primary" id="get_meal">Get Meal 🍔</button>
+
+        </div>
+        <div id="meal" class="row meal"></div>
+    </div>
+
+    
+    <!-- get in touch section -->
+    <div class="floating-container">
+        <div class="social-media-panel">
+          <ul>
+            <li>
+              <a href="https://twitter.com/florinpop1705" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/florinpop17" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/florinpop17" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="floating-btn">Get in Touch</button>
+  
+      <script>
+        // SOCIAL PANEL JS
+        const floating_btn = document.querySelector(".floating-btn");
+        const close_btn = document.querySelector(".close-btn");
+        const floating_container = document.querySelector(".floating-container");
+  
+        floating_btn.addEventListener("click", () => {
+          floating_container.classList.toggle("visible");
+        });
+  
+        close_btn.addEventListener("click", () => {
+          floating_container.classList.remove("visible");
+        });
+      </script>
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+
+</body>
+
+</html>
