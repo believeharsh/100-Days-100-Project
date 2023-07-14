@@ -252,7 +252,7 @@ p {
 
 .clear {
 	background-color: #888;
-	top: 116px;
+	top: 131px;
 }
 
 
@@ -368,19 +368,19 @@ p {
 }
 
 .floating-btn {
-	border-radius: 26.5px;
-	background-color: #001f61;
-	border: 1px solid #001f61;
-	box-shadow: 0 16px 22px -17px #03153b;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 20px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
+	border-radius: 16.5px;
+    background-color: #0051ff;
+    border: 1px solid #001f61;
+    box-shadow: 0 16px 22px -17px #03153b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 12px 9px;
+    position: fixed;
+    bottom: 20px;
+    right: 3px;
+    z-index: 967;
 }
 
 .floating-btn:hover {
