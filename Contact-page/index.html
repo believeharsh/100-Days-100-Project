@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body>
+    <div class="Main-container">
+        <div class="navbar">
+            <h3 id="personal-branding">Harsh Dahiya</h3>
+            <p id="project-num">100 Projects</p>
+            <p id="project-name">Contact-Form</p>
+        </div>
+        <button id="project-sNo">4</button>
+        <div class="form-container">
+
+            <form action="" method="post">
+                <div class="main">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                        </select>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </form>
+        </div>
+
+         <!-- get in touch section -->
+    <div class="floating-container">
+        <div class="social-media-panel">
+          <ul>
+            <li>
+              <a href="https://twitter.com/florinpop1705" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/florinpop17" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/florinpop17" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="floating-btn">:)</button>
+    </div>
+
+    <script>
+        // SOCIAL PANEL JS
+        const floating_btn = document.querySelector(".floating-btn");
+        const close_btn = document.querySelector(".close-btn");
+        const floating_container = document.querySelector(".floating-container");
+  
+        floating_btn.addEventListener("click", () => {
+          floating_container.classList.toggle("visible");
+        });
+  
+        close_btn.addEventListener("click", () => {
+          floating_container.classList.remove("visible");
+        });
+      </script>
+
+
+</body>
+
+</html>
