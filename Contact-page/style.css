@@ -13,8 +13,10 @@ body {
 }
 
 .Main-Container {
+    height: 100vh;
     width: 100vw;
 }
+
 
 .navbar {
     display: flex;
@@ -24,6 +26,7 @@ body {
     width: 100%;
     position: relative;
     padding: 8px;
+    height: 10%;
 
 }
 
@@ -34,7 +37,9 @@ body {
 
 
 }
-
+/* .Main-container{
+    hieght
+} */
 #personal-branding {
     position: relative;
     left: 27px;
@@ -132,11 +137,11 @@ label {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+     height: 90vh;
 }
 
 #form-main {
-    width: 70%;
+    width: 55%;
     background: #6d6c6c;
     border-radius: 15px;
     padding: 10px 12px;
