@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="personal-branding">Harsh Dahiya</div>
+        <div id="project-num">100 Projects</div>
+        <div id="project-name">Mood-Calander</div>
+      </div>
+<div class="main-container">
+    <div class="main">
+        <h2>country Details</h2>
+        <div class="search">
+            <input type="text" id="input">
+            <button onclick="country()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="container">
+           
+
+
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        const container = document.getElementById('container');
+
+        const api = new XMLHttpRequest;
+
+
+        function country() {
+            const countryName = document.getElementById('input').value;
+
+            api.open('GET', "https://restcountries.com/v3.1/name/" + countryName, true)
+            api.send();
+
+            api.addEventListener('load', function () {
+                const [data] = JSON.parse(this.responseText);
+                console.log(data)
+
+
+                const htmlData = `
+                <div class="card">
+                    <h4>${data.name.common}</h4>
+                  <div class="cardHead">
+                    <img src="${data.flags.png}" alt="">
+                    </div>
+                
+                    <div class="cardBody">
+                    <div>
+                        <h3>Capital : <sapn>${data.capital}<span></h3>
+                        <h3>Region : ${data.subregion}</h3>
+                        <h3>Population : ${data.population}</h3>
+                    </div>
+                    <div>
+                        <h3>Area : ${data.area} km2</h3>
+                        <h3>Timezone : ${data.timezones}</h3>
+                        <h3>Flag : ${data.flag}</h3>
+                    </div>
+                    </div>
+                </div>
+                `;
+         
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = htmlData;
+
+                const newData = tempDiv.firstChild;
+                const existingData = container.querySelector('.card');
+
+                if(existingData){
+                    container.replaceChild(newData, existingData);
+                }
+                else{
+                    container.appendChild(newData);
+                }
+
+                container.insertAdjacentHTML('afterbegin', htmlData);
+            });
+
+
+        }
+
+    </script>
+   
+</body>
+
+</html>
