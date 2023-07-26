@@ -7,11 +7,246 @@
     box-sizing: border-box;
 
 }
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    max-width: 1600px;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 40px;
+    background-color: white;
+    border-bottom: 1px solid #d0d0d0;
+ 
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left-side i {
+    position: relative;
+    left: 12px;
+    font-size: 22px;
+}
+.left-side i:hover{
+    font-size: 23px;
+}
+.logo {
+    /* width: 120px; */
+    font-size: 25px;
+    margin: 2px 30px;
+    font-family: 'Ysabeau Office', sans-serif;
+    color: black;
+    font-weight: 1000;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    font-size: 30px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 1000;
+    position: relative;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #1fafcc;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.page-container {
+
+    background-color: rgb(16 17 31);
+    width: 18%;
+    color: black;
+    position: fixed;
+    height: 100vh;
+    z-index: 999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 0px 43px 43px 0px;
+    top: 10.1%;
+    border-right: 1px solid white;
+
+    transition: transform 0.4s ease-in-out;
+}
+
+.page-container.visible {
+    transform: translateX(-110%);
+   
+}
+
+.side-row {
+    padding: 20px 3px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+
+}
+
+.text-center header {
+    position: relative;
+    top: 0px;
+    margin: 1px auto;
+    text-align: center;
+}
+
+.navigation-container {
+    margin-top: -29px;
+}
+
+
+.text-center header img {
+    height: 88px;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+    margin: 10% 0%;
+}
+
+.text-center header h5 {
+    margin: 7px 3px;
+    font-size: 20px;
+
+    color: #00f9ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+}
+
+section {
+    margin: 20% 1%;
+}
+
+.navigation-container li {
+
+    list-style: none;
+    margin: 6px 0px;
+
+}
+
+
+.navigation-container li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+#insta-follow {
+    height: 30px;
+    width: 100%;
+    padding: 0px 5px;
+    background-color: rgb(0 0 0);
+    border-radius: 7px;
+    border: 1px solid white;
+    font-family: "Ysabeau Office", sans-serif;
+}
+
+#insta-follow p {
+    font-size: 12px;
+    color: white;
+}
+
+#insta-follow p a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.social-container {
+    display: flex;
+    margin: 5px 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-container li {
+    list-style: none;
+
+    font-size: 12px;
+    margin: 5px;
+
+}
+
+.social-container li a {
+
+    text-decoration: none;
+    color: #00f9ff;
+    font-size: 14px;
+}
+
+.social-container li a:hover {
+    font-size: 13.5px;
+}
+
+#copyright {
+    font-size: 13px;
+    color: white;
+    margin: 1px 0px 10px 12px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
 .container{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg,#7d7d7d , #000000);
     padding: 10px;
+
+}
+#project-sNo {
+	border-radius: 0px 16px 16px 0px;
+	padding: 3px 20px 3px 25px;
+	font-size: 40px;
+	border: 2px solid #67dffe;
+	position: fixed;
+	left: -1%;
+    top: 15%;
+
+}
+
+#project-sNo:hover {
+	font-size: 42px;
+	background-color: #67dffe;
+	color: black;
+	font-weight: bolder;
+	border: 2px solid white;
 
 }
 .to-do-app{
@@ -66,7 +301,7 @@
     border-radius: 40px;
     font-weight: 800;
 }
- ul li{
+#list-container li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -74,7 +309,7 @@
     cursor: pointer;
     position: relative;
 }
- ul li::before{
+#list-container li::before{
     content: '';
     position: absolute;
     height: 28px;
