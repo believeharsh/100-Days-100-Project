@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@500&family=Inter:wght@200;500;700&family=Montserrat:wght@200&family=Orbitron&family=PT+Sans+Narrow&family=PT+Sans:ital@0;1&family=Pacifico&family=Poppins:wght@200&family=Rubik+Dirt&family=Signika+Negative:wght@600&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&family=Ysabeau+Office:wght@200;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@500&family=Inter:wght@200;500;700&family=Montserrat:wght@200&family=Orbitron&family=PT+Sans+Narrow&family=PT+Sans:ital@0;1&family=Pacifico&family=Poppins:wght@200&family=REM&family=Rubik+Dirt&family=Signika+Negative:wght@600&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&family=Ysabeau+Office:wght@200;500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 
 }
+
 #navbar {
     position: fixed;
     width: 100%;
@@ -23,7 +25,7 @@ nav {
     padding-right: 40px;
     background-color: white;
     border-bottom: 1px solid #d0d0d0;
- 
+
 }
 
 .left-side {
@@ -38,9 +40,11 @@ nav {
     left: 12px;
     font-size: 22px;
 }
-.left-side i:hover{
+
+.left-side i:hover {
     font-size: 23px;
 }
+
 .logo {
     /* width: 120px; */
     font-size: 25px;
@@ -49,6 +53,8 @@ nav {
     color: black;
     font-weight: 1000;
 }
+
+
 
 nav ul li {
     display: inline-block;
@@ -65,6 +71,9 @@ nav ul li a {
     position: relative;
     font-family: 'Ysabeau Office', sans-serif;
 }
+
+
+
 
 nav ul li a::after {
     content: "";
@@ -99,7 +108,7 @@ nav ul li a:hover::after {
 
 .page-container.visible {
     transform: translateX(-110%);
-   
+
 }
 
 .side-row {
@@ -223,33 +232,35 @@ section {
 
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#7d7d7d , #000000);
+    background: linear-gradient(135deg, #7d7d7d, #000000);
     padding: 10px;
 
 }
+
 #project-sNo {
-	border-radius: 0px 16px 16px 0px;
-	padding: 3px 20px 3px 25px;
-	font-size: 40px;
-	border: 2px solid #67dffe;
-	position: fixed;
-	left: -1%;
+    border-radius: 0px 16px 16px 0px;
+    padding: 3px 20px 3px 25px;
+    font-size: 40px;
+    border: 2px solid #67dffe;
+    position: fixed;
+    left: -1%;
     top: 15%;
 
 }
 
 #project-sNo:hover {
-	font-size: 42px;
-	background-color: #67dffe;
-	color: black;
-	font-weight: bolder;
-	border: 2px solid white;
+    font-size: 42px;
+    background-color: #67dffe;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid white;
 
 }
-.to-do-app{
+
+.to-do-app {
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -258,29 +269,33 @@ section {
     border-radius: 10px;
 
 }
-.to-do-app h2{
+
+.to-do-app h2 {
     color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     font-family: 'REM', sans-serif;
-    
+
 }
-.to-do-app h2 img{
+
+.to-do-app h2 img {
     width: 30px;
     margin-left: 10px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#edeef0 ;
+    background: #edeef0;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
 
 }
-.row input{
+
+.row input {
     flex: 1;
     border: none;
     outline: none;
@@ -290,7 +305,7 @@ section {
     font-weight: 900;
 }
 
-.row button{
+.row button {
     border: none;
     outline: none;
     padding: 16px;
@@ -301,7 +316,8 @@ section {
     border-radius: 40px;
     font-weight: 800;
 }
-#list-container li{
+
+#list-container li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -309,7 +325,8 @@ section {
     cursor: pointer;
     position: relative;
 }
-#list-container li::before{
+
+#list-container li::before {
     content: '';
     position: absolute;
     height: 28px;
@@ -325,16 +342,18 @@ section {
 }
 
 
-ul li.checked{
+ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-ul li.checked::before{
+
+ul li.checked::before {
     background-image: url("https://media.istockphoto.com/id/496603666/vector/flat-icon-check.jpg?s=612x612&w=0&k=20&c=BMYf-7moOtevP8t46IjHHbxJ4x4I0ZoFReIp9ApXBqU=");
-   
+
 
 }
-ul li span{
+
+ul li span {
     position: absolute;
     right: 0;
     top: 5px;
@@ -347,8 +366,9 @@ ul li span{
     border-radius: 50%;
     background: #edeef0;
 }
-ul li span:hover{
-  
+
+ul li span:hover {
+
     color: black;
     font-weight: 700;
 }
