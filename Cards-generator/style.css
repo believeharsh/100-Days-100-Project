@@ -1,41 +1,37 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@500&family=Inter:wght@200;500;700&family=Montserrat:wght@200&family=Orbitron&family=PT+Sans+Narrow&family=PT+Sans:ital@0;1&family=Pacifico&family=Poppins:wght@200;300&family=REM&family=Rubik+Dirt&family=Signika+Negative:wght@600&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&family=Ysabeau+Office:wght@200;500&display=swap');
-*{
+
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "poppins" , sans-serif;
-}
-body{
-    background-color: white;
-
-}
-.container{
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #eff3ff;
+  }
+  .container {
     width: 350px;
- 
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-}
-#card{
+  }
+  #card {
     position: relative;
     width: 100%;
     padding: 30px 20px;
-   
-    background: radial-gradient(circle at 50% 0% , orange 36%, #ffffff 36%);
-    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-}
-#card img{
+  }
+  #card img {
     display: block;
     width: 180px;
     max-height: 200px;
     position: relative;
     margin: 20px auto;
-
-}
-.hp {
+  }
+  .hp {
     width: 80px;
     background-color: #ffffff;
     text-align: center;
@@ -43,42 +39,37 @@ body{
     border-radius: 30px;
     margin-left: auto;
     font-weight: 400;
-}
-
-.poke-name{
+  }
+  .poke-name {
     text-align: center;
     font-weight: 600;
-}
-
-.types{
+  }
+  .types {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 0 40px 0;
-}
-.hp span,
-.types span{
- font-size: 12px;
- letter-spacing: 12px;
- font-weight: 600;
-
-
-}
-.types span{
+  }
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .types span {
     padding: 5px 20px;
     border-radius: 20px;
     color: #ffffff;
-    
-} 
-.stats{
+  }
+  .stats {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-}
-.stats p {
+  }
+  .stats p {
     color: #404060;
-}
-#btn{
+  }
+  #btn {
     display: block;
     padding: 15px 60px;
     font-size: 18px;
@@ -88,4 +79,4 @@ body{
     margin: 30px auto;
     border: none;
     border-radius: 5px;
-}
+  }
