@@ -1,50 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Card Generator</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pokemon Card Generator</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div id="navbar">
-    <nav>
-      <div class="left-side">
-        <i id="Main-Menu-button" class="fa-solid fa-bars"></i>
-        <p class="logo">HarshDahiya</p>
-      </div>
-
-      <!-- <img src="" class="logo" alt=""> -->
-      <ul id="side-menu">
-        <li class="navitems"><a href="#navbar">100 Projects</a></li>
-        <li class="navitems"><a href="#about">Cards-Generator</a></li>
-      </ul>
-      <i
-        id="menu"
-        class="fa-solid fa-square-ellipsis-vertical"
-        onclick="openmenu()"
-      ></i>
-    </nav>
-  </div>
-      <div class="container">
-     
-        <div id="card">
-         
+  <body>
+    <div id="navbar">
+      <nav>
+        <div class="left-side">
+          <i id="Main-Menu-button" class="fa-solid fa-bars"></i>
+          <p class="logo">HarshDahiya</p>
         </div>
-       
-        <button id="btn">Generate</button>
-      </div>
-      <button id="project-sNo">7</button>
-      <!-- Script -->
-      <script src="script.js"></script>
-</body>
 
+        <!-- <img src="" class="logo" alt=""> -->
+        <ul id="side-menu">
+          <li class="navitems"><a href="#navbar">100 Projects</a></li>
+          <li class="navitems"><a href="#about">Cards-Generator</a></li>
+        </ul>
+        <i
+          id="menu"
+          class="fa-solid fa-square-ellipsis-vertical"
+          onclick="openmenu()"
+        ></i>
+      </nav>
+    </div>
+    <div class="side-menu-container">
+      <div class="page-container visible">
+        <div class="side-row">
+          <aside class="column-sm-2 col-xs-12 main-sidebar">
+            <div class="text-center column">
+              <header>
+                <img src="images/profile.png" alt="" />
+                <h5>Harsh Dahiya</h5>
+              </header>
+              <section>
+                <ul class="navigation-container">
+                  <li><a href="" target="_blank">My Resume</a></li>
+                  <li>
+                    <a href="https://github.com/believeharsh" target="_blank"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/harsh-dahiya-3a270a247/"
+                      target="_blank"
+                      >Linkedin</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" target="_blank">My Portfolio</a>
+                  </li>
+                </ul>
+              </section>
+              <footer>
+                <button id="insta-follow">
+                  <p>
+                    <i class="fa-brands fa-instagram"></i> <span>follow</span
+                    ><span
+                      ><a href="https://www.instagram.com/bontinue_/"
+                        >@bontinue_</a
+                      ></span
+                    >
+                  </p>
+                </button>
+                <ul class="social-container">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/harsh-dahiya-3a270a247/"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/bontinue_/"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCmaYfnt4JEebO5-IkGs1yZA"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+                <p id="copyright">copyright @ 2023</p>
+              </footer>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="card"></div>
+
+      <button id="btn">Generate</button>
+    </div>
+    <button id="project-sNo">7</button>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+  <script>
+    const side_menu_container = document.querySelector(".page-container");
+
+    const Main_Menu_button = document.getElementById("Main-Menu-button");
+
+    Main_Menu_button.addEventListener("click", () => {
+      side_menu_container.classList.toggle("visible");
+    });
+  </script>
 </html>
