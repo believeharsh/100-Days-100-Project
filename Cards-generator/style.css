@@ -7,6 +7,107 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
+  #navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    max-width: 1600px;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 40px;
+    background-color: white;
+    border-bottom: 1px solid #d0d0d0;
+
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left-side i {
+    position: relative;
+    left: 12px;
+    font-size: 22px;
+}
+
+.left-side i:hover {
+    font-size: 23px;
+}
+
+.logo {
+    /* width: 120px; */
+    font-size: 25px;
+    margin: 2px 30px;
+    font-family: 'Ysabeau Office', sans-serif;
+    color: black;
+    font-weight: 1000;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 70px;
+}
+
+nav ul li a {
+    font-size: 30px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 1000;
+    position: relative;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+
+
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #1fafcc;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+#project-sNo {
+  border-radius: 0px 16px 16px 0px;
+  padding: 3px 20px 3px 25px;
+  font-size: 40px;
+  border: 2px solid #67dffe;
+  position: fixed;
+  left: -1%;
+  top: 15%;
+
+}
+
+#project-sNo:hover {
+  font-size: 42px;
+  background-color: #67dffe;
+  color: black;
+  font-weight: bolder;
+  border: 2px solid white;
+
+}
   body {
     background-color: #eff3ff;
   }
@@ -14,7 +115,7 @@
     width: 350px;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 57%;
     left: 50%;
   }
   #card {
