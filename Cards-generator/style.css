@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@500&family=Inter:wght@200;500;700&family=Montserrat:wght@200&family=Orbitron&family=PT+Sans+Narrow&family=PT+Sans:ital@0;1&family=Pacifico&family=Poppins:wght@200;300&family=REM&family=Rubik+Dirt&family=Signika+Negative:wght@600&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&family=Ysabeau+Office:wght@200;500&display=swap');
+
 /* .........................for full body of the project....................... */
 * {
   padding: 0;
@@ -106,8 +107,9 @@ nav ul li a:hover::after {
 }
 
 /* ......................... Side-bar Section ....................... */
-.page-container {
 
+
+.page-container {
   background-color: rgb(16 17 31);
   width: 18%;
   color: black;
@@ -124,15 +126,12 @@ nav ul li a:hover::after {
 
 .page-container.visible {
   transform: translateX(-110%);
-
-
 }
 
 .side-row {
   padding: 20px 3px;
   display: flex;
   flex-direction: column;
-
 }
 
 .text-center {
@@ -141,7 +140,6 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   margin-top: 15%;
-
 }
 
 .text-center header {
@@ -155,18 +153,16 @@ nav ul li a:hover::after {
   margin-top: -29px;
 }
 
-
 .text-center header img {
   height: 88px;
   border-radius: 50%;
-  /* margin-left: 10px; */
+
   margin: 10% 0%;
 }
 
 .text-center header h5 {
   margin: 7px 3px;
   font-size: 20px;
-
   color: #00f9ff;
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
@@ -177,12 +173,9 @@ section {
 }
 
 .navigation-container li {
-
   list-style: none;
   margin: 6px 0px;
-
 }
-
 
 .navigation-container li a {
   color: white;
@@ -190,7 +183,6 @@ section {
   text-decoration: none;
   font-size: 20px;
   font-family: 'PT Sans Narrow', sans-serif;
-
 }
 
 #insta-follow {
@@ -211,7 +203,6 @@ section {
 #insta-follow p a {
   color: white;
   text-decoration: none;
-
 }
 
 .social-container {
@@ -219,19 +210,16 @@ section {
   margin: 5px 0px;
   justify-content: center;
   align-items: center;
-
 }
 
 .social-container li {
   list-style: none;
-
   font-size: 12px;
   margin: 5px;
 
 }
 
 .social-container li a {
-
   text-decoration: none;
   color: #00f9ff;
   font-size: 14px;
@@ -249,7 +237,10 @@ section {
 
 }
 
+
 /* ......................... main-Container of the project ....................... */
+
+
 body {
   background-color: #eff3ff;
 }
@@ -324,6 +315,8 @@ body {
 }
 
 /* ......................... New Card Generator Button ....................... */
+
+
 #btn {
   display: block;
   padding: 15px 60px;
