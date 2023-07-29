@@ -1,93 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@500&family=Inter:wght@200;500;700&family=Montserrat:wght@200&family=Orbitron&family=PT+Sans+Narrow&family=PT+Sans:ital@0;1&family=Pacifico&family=Poppins:wght@200;300&family=REM&family=Rubik+Dirt&family=Signika+Negative:wght@600&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&family=Ysabeau+Office:wght@200;500&display=swap');
-
-
+/* .........................for full body of the project....................... */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  #navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    max-width: 1600px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* .........................Navbar Section....................... */
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  max-width: 1600px;
 }
 
 nav {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 40px;
-    background-color: white;
-    border-bottom: 1px solid #d0d0d0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 40px;
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
 
 }
 
 .left-side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .left-side i {
-    position: relative;
-    left: 12px;
-    font-size: 22px;
+  position: relative;
+  left: 12px;
+  font-size: 22px;
 }
 
 .left-side i:hover {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 .logo {
-    /* width: 120px; */
-    font-size: 25px;
-    margin: 2px 30px;
-    font-family: 'Ysabeau Office', sans-serif;
-    color: black;
-    font-weight: 1000;
+  font-size: 25px;
+  margin: 2px 30px;
+  font-family: 'Ysabeau Office', sans-serif;
+  color: black;
+  font-weight: 1000;
 }
 
-
-
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 70px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 70px;
 }
 
 nav ul li a {
-    font-size: 30px;
-    color: black;
-    list-style: none;
-    text-decoration: none;
-    font-weight: 1000;
-    position: relative;
-    font-family: 'Ysabeau Office', sans-serif;
+  font-size: 30px;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 1000;
+  position: relative;
+  font-family: 'Ysabeau Office', sans-serif;
 }
 
-
-
-
 nav ul li a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: #1fafcc;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #1fafcc;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
+/* .........................Project Serial Number....................... */
 
 #project-sNo {
   border-radius: 0px 16px 16px 0px;
@@ -108,76 +104,234 @@ nav ul li a:hover::after {
   border: 2px solid white;
 
 }
-  body {
-    background-color: #eff3ff;
-  }
-  .container {
-    width: 350px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 57%;
-    left: 50%;
-  }
-  #card {
-    position: relative;
-    width: 100%;
-    padding: 30px 20px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-  }
-  #card img {
-    display: block;
-    width: 180px;
-    max-height: 200px;
-    position: relative;
-    margin: 20px auto;
-  }
-  .hp {
-    width: 80px;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 30px;
-    margin-left: auto;
-    font-weight: 400;
-  }
-  .poke-name {
-    text-align: center;
-    font-weight: 600;
-  }
-  .types {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0 40px 0;
-  }
-  .hp span,
-  .types span {
-    font-size: 12px;
-    letter-spacing: 0.4px;
-    font-weight: 600;
-  }
-  .types span {
-    padding: 5px 20px;
-    border-radius: 20px;
-    color: #ffffff;
-  }
-  .stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-  }
-  .stats p {
-    color: #404060;
-  }
-  #btn {
-    display: block;
-    padding: 15px 60px;
-    font-size: 18px;
-    background-color: #101010;
-    color: #ffffff;
-    position: relative;
-    margin: 30px auto;
-    border: none;
-    border-radius: 5px;
-  }
+
+/* ......................... Side-bar Section ....................... */
+.page-container {
+
+  background-color: rgb(16 17 31);
+  width: 18%;
+  color: black;
+  position: fixed;
+  height: 100vh;
+  z-index: 999;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 0px 43px 43px 0px;
+  top: 9.1%;
+  border-right: 1px solid white;
+
+  transition: transform 0.4s ease-in-out;
+}
+
+.page-container.visible {
+  transform: translateX(-110%);
+
+
+}
+
+.side-row {
+  padding: 20px 3px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+
+}
+
+.text-center header {
+  position: relative;
+  top: 0px;
+  margin: 1px auto;
+  text-align: center;
+}
+
+.navigation-container {
+  margin-top: -29px;
+}
+
+
+.text-center header img {
+  height: 88px;
+  border-radius: 50%;
+  /* margin-left: 10px; */
+  margin: 10% 0%;
+}
+
+.text-center header h5 {
+  margin: 7px 3px;
+  font-size: 20px;
+
+  color: #00f9ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+}
+
+section {
+  margin: 20% 1%;
+}
+
+.navigation-container li {
+
+  list-style: none;
+  margin: 6px 0px;
+
+}
+
+
+.navigation-container li a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+#insta-follow {
+  height: 30px;
+  width: 100%;
+  padding: 0px 5px;
+  background-color: rgb(0 0 0);
+  border-radius: 7px;
+  border: 1px solid white;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+#insta-follow p {
+  font-size: 12px;
+  color: white;
+}
+
+#insta-follow p a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.social-container {
+  display: flex;
+  margin: 5px 0px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-container li {
+  list-style: none;
+
+  font-size: 12px;
+  margin: 5px;
+
+}
+
+.social-container li a {
+
+  text-decoration: none;
+  color: #00f9ff;
+  font-size: 14px;
+}
+
+.social-container li a:hover {
+  font-size: 13.5px;
+}
+
+#copyright {
+  font-size: 13px;
+  color: white;
+  margin: 1px 0px 10px 12px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* ......................... main-Container of the project ....................... */
+body {
+  background-color: #eff3ff;
+}
+
+.container {
+  width: 350px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 57%;
+  left: 50%;
+}
+
+#card {
+  position: relative;
+  width: 100%;
+  padding: 30px 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+#card img {
+  display: block;
+  width: 180px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.hp {
+  width: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
+}
+
+.poke-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+.types {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+
+.hp span,
+.types span {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+.types span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stats p {
+  color: #404060;
+}
+
+/* ......................... New Card Generator Button ....................... */
+#btn {
+  display: block;
+  padding: 15px 60px;
+  font-size: 18px;
+  background-color: #101010;
+  color: #ffffff;
+  position: relative;
+  margin: 30px auto;
+  border: none;
+  border-radius: 5px;
+}
