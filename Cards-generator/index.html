@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokemon Card Generator</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="card"></div>
-      <button id="btn">Generate</button>
-    </div>
-    <!-- Script -->
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Card Generator</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <nav>
+      <div class="left-side">
+        <i id="Main-Menu-button" class="fa-solid fa-bars"></i>
+        <p class="logo">HarshDahiya</p>
+      </div>
+
+      <!-- <img src="" class="logo" alt=""> -->
+      <ul id="side-menu">
+        <li class="navitems"><a href="#navbar">100 Projects</a></li>
+        <li class="navitems"><a href="#about">Cards-Generator</a></li>
+      </ul>
+      <i
+        id="menu"
+        class="fa-solid fa-square-ellipsis-vertical"
+        onclick="openmenu()"
+      ></i>
+    </nav>
+  </div>
+      <div class="container">
+     
+        <div id="card">
+         
+        </div>
+       
+        <button id="btn">Generate</button>
+      </div>
+      <button id="project-sNo">7</button>
+      <!-- Script -->
+      <script src="script.js"></script>
+</body>
+
 </html>
