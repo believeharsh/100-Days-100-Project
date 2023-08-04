@@ -356,3 +356,23 @@ input[type=checkbox] {
 .floating-btn:focus {
 	outline: none;
 }
+
+#project-sNo {
+	border-radius: 0px 16px 16px 0px;
+	padding: 3px 20px 3px 25px;
+	font-size: 40px;
+	border: 2px solid #67dffe;
+	position: fixed;
+	left: -1%;
+	top: 15%;
+  
+  }
+  
+  #project-sNo:hover {
+	font-size: 42px;
+	background-color: #67dffe;
+	color: black;
+	font-weight: bolder;
+	border: 2px solid white;
+  
+  }
