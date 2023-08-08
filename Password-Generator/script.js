@@ -28,7 +28,7 @@ clipboard.addEventListener('click', () => {
     alert('Password copied to clipboard');
 });
 
-generate.addEventListener('click', () => {
+generateEl.addEventListener('click', () => {
     const length = +lengthEl.value;
     const hasLower = lowercaseEl.checked;
     const hasUpper = uppercaseEl.checked;
