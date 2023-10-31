@@ -1,16 +1,31 @@
-export default function Code() {
+function Code() {
   return (
     <>
-      <div className="w-[100vw] flex justify-center my-[2rem]">
-        <div
-          className="w-[95vw] overflow-y-hidden
-                    flex flex-wrap gap-[1rem] md:justify-start justify-center "
-        >
-          <div className="p-[5px] pc-[1rem]">
-            <div className="border rounder-[30px] shadow-white shadow-md border-white md:w-[30vw] w-[90vw] pb-[1rem]">
-              <div className="">Harsh Dahiya </div>
-              <div></div>
-              <div></div>
+      <div className="w-[100vw] flex justify-center mb-[1rem] bg-black px-8 py-8">
+        <div className="w-[95vw] overflow-y-hidden flex flex-wrap gap-[1rem] md:justify-start justify-center">
+          <div
+            className="p-[5px] pb-[1rem]"
+
+          >
+            <div className="border rounded-[30px] shadow-white shadow-md border-white md:w-[30vw] w-[90vw] pb-[1rem]">
+              <div className="flex md:w-[30vw] w-[90vw] p-[5px] pb-[8px] item-center justify-between">
+                <div className="text-white shadow-white shadow-md hover:text-black hover:bg-white transition-all duration-300 cursor-pointer flex items-center justify-center px-[1rem] h-[30px] rounded-[20px] ml-[1rem] mt-[1rem] border border-white">Chat gpt </div>
+
+                <div className="flex items-center">
+                  <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className="text-white w-[40px] cursor-pointer hover:scale-110 transition-all duration-300 scale-125 mr-[8px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>go</svg>
+                </div>
+              </div>
+              <div className="flex md:w-[30vw] w-[90vw] item-center justify-center mt-[15px]">
+                <div className="md:w-[27vw] relative pt-[2rem] transition-all duration-200 h-[6rem] w-[85vw]"></div>
+              </div>
+              <div className="flex md:w-[30vw] w-[90vw] text-white item-center pl-[1.5rem] mt-[16px]">
+                <p className="md:text-[20px] text-[18px] font-[500] tracking-wide border-b pb-[10px] md:w-[26vw] w-[80vw] border-white"></p>
+              </div>
+              <div className="flex md:w-[30vw] w-[90vw] text-white item-center pl-[1.5rem] mt-[16px]">
+                <p className="tracking-wide pb-[10px] md:w-[26vw] w-[80vw]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid fuga odit modi. Et reiciendis dolores nam debitis, sapiente harum!
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -18,3 +33,5 @@ export default function Code() {
     </>
   );
 }
+
+export default Code;
