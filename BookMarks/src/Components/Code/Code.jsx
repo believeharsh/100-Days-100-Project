@@ -1,8 +1,8 @@
 function Code() {
   return (
     <>
-      <div className="w-[100vw] flex justify-center mb-[1rem] bg-black px-8 py-8">
-        <div className="w-[95vw] overflow-y-hidden flex flex-wrap gap-[1rem] md:justify-start justify-center">
+      <div className=" flex justify-center mb-[1rem] bg-black px-8 py-8 ">
+        <div className=" lg overflow-y-hidden flex flex-wrap gap-[1rem] md:justify-start justify-center">
           <div
             className="p-[5px] pb-[1rem]"
 
@@ -16,10 +16,11 @@ function Code() {
                 </div>
               </div>
               <div className="flex md:w-[30vw] w-[90vw] item-center justify-center mt-[15px]">
-                <div className="md:w-[27vw] relative pt-[2rem] transition-all duration-200 h-[6rem] w-[85vw]"></div>
+              <p className="text-white">Here we will rander one picture</p>
+               
               </div>
               <div className="flex md:w-[30vw] w-[90vw] text-white item-center pl-[1.5rem] mt-[16px]">
-                <p className="md:text-[20px] text-[18px] font-[500] tracking-wide border-b pb-[10px] md:w-[26vw] w-[80vw] border-white"></p>
+                <p className="md:text-[20px] text-[18px] font-[500] tracking-wide border-b pb-[10px] md:w-[26vw] w-[80vw] border-white">Importance</p>
               </div>
               <div className="flex md:w-[30vw] w-[90vw] text-white item-center pl-[1.5rem] mt-[16px]">
                 <p className="tracking-wide pb-[10px] md:w-[26vw] w-[80vw]">
