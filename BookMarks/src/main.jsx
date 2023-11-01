@@ -5,7 +5,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import './index.css'
 import Layout from './Layout/Layout'
 import Home from './Components/Home/Home'
-import Code from './Components/Code/Code'
+import LinkContainer from './Components/LinkContainer/LinkContainer'
 import Social from './Components/Social/Social'
 import Query from './Components/Query/Query'
 import Carrer from './Components/Carrer/Carrer'
@@ -52,7 +52,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
-      <Route path='code' element={<Code />} />
+      <Route path='code' element={<LinkContainer/>} />
       <Route path='social' element={<Social />} />
       <Route path='query' element={<Query />} />
       <Route path='carrer' element={<Carrer />} />
