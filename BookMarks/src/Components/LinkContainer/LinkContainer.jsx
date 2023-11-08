@@ -1,15 +1,17 @@
 // import React from 'react'
+// import AddLink from "../AddLink/AddLink"
 
 function LinkContainer() {
   return (
   <>
     <div className=" flex justify-center mb-[1rem] bg-black px-8 py-8 ">
+  
         <div className=" lg overflow-y-hidden flex flex-wrap gap-[1rem] md:justify-start justify-center">
           <div
             className="p-[5px] pb-[1rem]"
 
           >
-            <div className="border rounded-[30px] shadow-white shadow-md border-white md:w-[30vw] w-[90vw] pb-[1rem]">
+            <div id="Link-Container" className="border rounded-[30px] shadow-white shadow-md border-white md:w-[30vw] w-[90vw] pb-[1rem]">
               <div className="flex md:w-[30vw] w-[90vw] p-[5px] pb-[8px] item-center justify-between">
                 <div className="text-white shadow-white shadow-md hover:text-black hover:bg-white transition-all duration-300 cursor-pointer flex items-center justify-center px-[1rem] h-[30px] rounded-[20px] ml-[1rem] mt-[1rem] border border-white">Chat gpt </div>
 
