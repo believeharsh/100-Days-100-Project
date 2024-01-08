@@ -6,7 +6,7 @@ function MainWork(){
     const [Instafollowers, setInstafollowers] = useState(0)
     return(
       <>
-         <Counter/>
+         
 
       </>
     )
