@@ -33,7 +33,7 @@ function MainWork() {
       <div
         className="h-[100vh] text-white font-mono flex justify-center items-center flex-col m-0
           bg-blue-800"
-         >
+      >
         <div
           className="increCounter text-[60px] mt-[30px] text-white"
           data-target="12000"
