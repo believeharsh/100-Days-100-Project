@@ -24,12 +24,16 @@ function MainWork() {
   // const value = GetRest();
   document.addEventListener("DOMContentLoaded", GetRest());
 
+  function ReloadButton() {
+    GetRest();
+  }
+
   return (
     <>
       <div
         className="h-[100vh] text-white font-mono flex justify-center items-center flex-col m-0
-  bg-blue-800"
-      >
+          bg-blue-800"
+         >
         <div
           className="increCounter text-[60px] mt-[30px] text-white"
           data-target="12000"
@@ -41,6 +45,12 @@ function MainWork() {
           data-target="3000"
         ></div>
         <span className="text-[20px]">YouTube Subscribers</span>
+        <button
+          onClick={ReloadButton}
+          className="bg-black rounded-xl text-white py-3 px-6 hover:bg-gray-800 hover:boder-white hover:border-[1px]  mt-5 text-[15px] "
+        >
+          Reload Increment Counter ....
+        </button>
       </div>
     </>
   );
