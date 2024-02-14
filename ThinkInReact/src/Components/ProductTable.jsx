@@ -34,7 +34,7 @@ function ProductTable({ products, filterText, inStockOnly }) {
     });
   
     return (
-      <table className="text-center" >
+      <table className="mx-auto" >
         <thead className="">
           <tr>
             <th className="text-black text-2xl ">Name</th>

@@ -17,7 +17,7 @@ function SearchBar({
             type="checkbox" 
             checked={inStockOnly} 
             onChange={(e) => onInStockOnlyChange(e.target.checked)} />
-          
+          Don't show unavailable products
          
         </label>
       </form>
