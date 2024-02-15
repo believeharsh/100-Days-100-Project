@@ -9,7 +9,7 @@ function ProductTable({ products, filterText, inStockOnly }) {
   
     products.forEach((product) => {
       if (
-        product.name.toLowerCase().indexOf(
+        product.name.indexOf(
           filterText.toLowerCase()
         ) === -1
       ) {
@@ -25,7 +25,7 @@ function ProductTable({ products, filterText, inStockOnly }) {
             key={product.category} />
         );
       }
-      rows.push(
+     rows.push(
         <ProductRow
           product={product}
           key={product.name} />
