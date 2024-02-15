@@ -6,6 +6,8 @@ function SearchBar({
     onFilterTextChange,
     onInStockOnlyChange
   }) {
+
+   
     return (
       <div className=" bg-slate-800 px-3 py-2">
       <form className="text-center">
@@ -17,7 +19,8 @@ function SearchBar({
           <input className="px-3 py-2"
             type="checkbox" 
             checked={inStockOnly} 
-            onChange={(e) => onInStockOnlyChange(e.target.checked)} />
+            onChange={(e) => onInStockOnlyChange(e.target.checked)}
+    />
           Don't show unavailable products
          
         </label>
