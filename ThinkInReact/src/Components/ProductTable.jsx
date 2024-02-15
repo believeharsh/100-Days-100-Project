@@ -37,11 +37,11 @@ function ProductTable({ products, filterText, inStockOnly }) {
       <table className="mx-auto" >
         <thead className="">
           <tr>
-            <th className="text-black text-2xl ">Name</th>
-            <th className="text-black text-2xl ">Price</th>
+            <th className="text-white text-2xl ">Name</th>
+            <th className="text-white  text-2xl ">Price</th>
           </tr>
         </thead>
-        <tbody>{rows}</tbody>
+        <tbody className='text-white'>{rows}</tbody>
       </table>
     );
   }

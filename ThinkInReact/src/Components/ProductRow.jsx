@@ -7,7 +7,7 @@ function ProductRow({ product }) {
       </span>;
   
     return (
-      <tr className="text-center border-blue-400 border-[0.8px]">
+      <tr className="text-center border-blue-400 border-[0.8px] my-[1px]">
         <td>{name}</td>
         <td>{product.price}</td>
       </tr>
