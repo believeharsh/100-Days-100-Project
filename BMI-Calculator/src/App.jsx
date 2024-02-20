@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './index.css'
 
 function App() {
   const [Weight, setWeight] = useState(0);
@@ -32,6 +33,9 @@ function App() {
   let reload = () => {
     window.location.reload();
   };
+
+ 
+
   return (
     <>
      
@@ -46,7 +50,7 @@ function App() {
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              for="username"
+              htmlFor="username"
             >
               Your Weight in Kg
             </label>
@@ -62,7 +66,7 @@ function App() {
           <div className="mb-6">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              for=""
+              htmlFor=""
             >
               Your Height in foot
             </label>
@@ -96,7 +100,13 @@ function App() {
           </div>
         </form>
       </div>
-    </>
+
+
+    
+     
+      </>
+  
+    
   );
 }
 
