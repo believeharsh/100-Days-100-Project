@@ -4,7 +4,7 @@
 
 ## What it does?
 
-which takes only two parameters, your height and weight and provides you BMI( body mass index ) .
+It is a simple BMI Calculator which takes only two parameters, your height and weight and provides you BMI( body mass index ) .
 
 ## How this can be helpful if you are a beginner!
 
