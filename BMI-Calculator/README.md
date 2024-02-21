@@ -1,6 +1,8 @@
 # BMI Calculator
+<div>
+</div>
 
-## What id does?
+## What it does?
 
 which takes only two parameters, your height and weight and provides you BMI( body mass index ) .
 
@@ -20,13 +22,10 @@ see as developers, as much as we practice stuff as we become good at it. I've ma
    ```
 
 3. install tailwind css : you can go throught the taliwind css with vite serach in google.
+    ```sh
+     npm install -D tailwindcss postcss autoprefixer
+    ```
 
-```sh
- npm install -D tailwindcss postcss autoprefixer
-
-```
-
-```sh
-npx tailwindcss init -p
-
-```
+    ```sh
+     npx tailwindcss init -p
+    ```
