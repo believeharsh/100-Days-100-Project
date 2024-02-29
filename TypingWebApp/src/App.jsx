@@ -1,16 +1,17 @@
-import { useState} from "react";
 
-const Num_of_Words = 200 ; 
-const Seconds = 60; 
+import {useState} from  'react'
 
-function App() {
-  const [ words , setwords] = useState([]);
+const App = () => {
 
-  useEff
- 
+
 
   return (
-   <h1>Harsh Dahiya </h1>
+    <div>
+
+    <h1>Typing Speed Website </h1>
+
+      
+    </div>
   )
 }
 
