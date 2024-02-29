@@ -1,15 +1,19 @@
+import React from 'react'
+import { useState } from 'react'
 
-import {useState} from  'react'
+const Words = "Harsh hello what are you doing today? ".split(" ")
 
 const App = () => {
-
-
+  const [Input, setInput] = useState(Words)
 
   return (
     <div>
 
-    <h1>Typing Speed Website </h1>
-
+    <div className="">
+      {Input.map((words, index) => {
+        <p>{words}</p>
+      })}
+    </div>
       
     </div>
   )
