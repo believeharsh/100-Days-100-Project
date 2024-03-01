@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {useState, useRef } from "react";
 
 const MainApp = () => {
   const [Words, setWords] = useState([
@@ -97,7 +97,7 @@ const MainApp = () => {
     "it.".split(" "),
   ]);
   const [UserInput, setUserInput] = useState(" ");
-  const Seconds = 5;
+  const Seconds = 60;
   const [CoundDown, setCountDown] = useState(Seconds);
   const [Status, setStatus] = useState("loading..");
 
@@ -137,7 +137,7 @@ const MainApp = () => {
       setCurrWordIndex(0);
       setCorrect(0);
       setInCorrect(0);
-      // setCurrCharIndex(-1)
+  
     }
 
     if (Status !== "started") {
@@ -159,7 +159,7 @@ const MainApp = () => {
 
   return (
     <>
-      <div className="mt-3 my-3  outline-none border-gray-600 border-[0.4px] text-xl rounded-sm mx-2 flex justify-between">
+      <div className="mt-3 my-3 outline-none border-gray-600 border-[0.4px] text-xl rounded-sm mx-2 flex justify-between">
         <input
           type="text"
           className="w-full px-1 mx-2 outline-none h-[20px]"
@@ -199,21 +199,21 @@ const MainApp = () => {
         </div>
       )}
       {Status === "finished" && (
-        <div className="section">
-          <div className="columns">
-            <div className="column has-text-centered">
-              <p className="is-size-5">Words per minute:</p>
+        <div className="">
+          <div className="">
+            <div className="">
+              <p className="">Words per minute:</p>
               <p className="text-black">{Correct}</p>
             </div>
-            <div className="column has-text-centered">
-              <p className="is-size-5">Accuracy:</p>
-              {Correct !== 0 ? (
-                <p className="has-text-info is-size-1">
+            <div className="">
+              <div className="">Accuracy:</div>
+              {Correct !== 0 ? 
+                <div className="">
                   {Math.round((Correct / (Correct + InCorrect)) * 100)}%
-                </p>
-              ) : (
-                <p className="has-text-info is-size-1">0%</p>
-              )}
+                </div>
+               : 
+                <div className="">0%</div>
+              }
             </div>
           </div>
         </div>
