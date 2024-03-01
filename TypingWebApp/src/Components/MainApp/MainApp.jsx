@@ -2,63 +2,159 @@ import React, { useEffect, useState, useRef } from "react";
 
 const MainApp = () => {
   const [Words, setWords] = useState([
-    "Once " , "upon", "a", "time", "in", "a", "charming",
-    "village,", "there", "lived", "a", "curious", "little",
-    "cat", "named", "Whiskers.", "Whiskers", "had", "a",
-    "knack", "for", "finding", "adventure", "in", "the",
-    "most", "ordinary", "places.", "One", "day,", "while",
-    "exploring", "the", "enchanted", "forest,", "Whiskers",
-    "discovered", "a", "mysterious", "portal.", "Without",
-    "hesitation,", "Whiskers", "stepped", "through", "and",
-    "found", "a", "world", "filled", "with", "magic", "and",
-    "wonder.", "The", "inhabitants", "welcomed", "Whiskers",
-    "as", "their", "brave", "new", "friend.", "Together,",
-    "they", "embarked", "on", "countless", "adventures,",
-    "making", "memories", "that", "would", "last", "a",
-    "lifetime.", "And", "so,", "Whiskers'", "tale", "of",
-    "friendship", "and", "magic", "spread", "far", "and",
-    "wide,", "inspiring", "all", "who", "heard", "it.".split(' ')
-   ] )
+    "Once ",
+    "upon",
+    "a",
+    "time",
+    "in",
+    "a",
+    "charming",
+    "village,",
+    "there",
+    "lived",
+    "a",
+    "curious",
+    "little",
+    "cat",
+    "named",
+    "Whiskers.",
+    "Whiskers",
+    "had",
+    "a",
+    "knack",
+    "for",
+    "finding",
+    "adventure",
+    "in",
+    "the",
+    "most",
+    "ordinary",
+    "places.",
+    "One",
+    "day,",
+    "while",
+    "exploring",
+    "the",
+    "enchanted",
+    "forest,",
+    "Whiskers",
+    "discovered",
+    "a",
+    "mysterious",
+    "portal.",
+    "Without",
+    "hesitation,",
+    "Whiskers",
+    "stepped",
+    "through",
+    "and",
+    "found",
+    "a",
+    "world",
+    "filled",
+    "with",
+    "magic",
+    "and",
+    "wonder.",
+    "The",
+    "inhabitants",
+    "welcomed",
+    "Whiskers",
+    "as",
+    "their",
+    "brave",
+    "new",
+    "friend.",
+    "Together,",
+    "they",
+    "embarked",
+    "on",
+    "countless",
+    "adventures,",
+    "making",
+    "memories",
+    "that",
+    "would",
+    "last",
+    "a",
+    "lifetime.",
+    "And",
+    "so,",
+    "Whiskers'",
+    "tale",
+    "of",
+    "friendship",
+    "and",
+    "magic",
+    "spread",
+    "far",
+    "and",
+    "wide,",
+    "inspiring",
+    "all",
+    "who",
+    "heard",
+    "it.".split(" "),
+  ]);
   const [UserInput, setUserInput] = useState(" ");
-  const Seconds = 60;
-  const [CoundDown, setCountDown] = useState(Seconds)
+  const Seconds = 5;
+  const [CoundDown, setCountDown] = useState(Seconds);
+  const [Status, setStatus] = useState("loading..");
 
-  const [currWordIndex, setCurrWordIndex] = useState(0)
+  const [currWordIndex, setCurrWordIndex] = useState(0);
   const [isWordCorrect, setIsWordCorrect] = useState(true);
-  const [ Correct, setCorrect]  = useState()
-  const [ InCorrect, setInCorrect]  = useState()
+  const [Correct, setCorrect] = useState();
+  const [InCorrect, setInCorrect] = useState();
   const InputRef = useRef(null);
-  useEffect(() => {
-    // Focus on the input element when the component mounts
-    InputRef.current.focus();
-  }, []);
 
-  function ProcessInput(value){
+  function ProcessInput(value) {
     const currentWord = Words[currWordIndex];
-    if(value.endsWith(' ')){
-        setCurrWordIndex( index => index + 1 )
-        setUserInput('')
-        setIsWordCorrect(true)
+    if (value.endsWith(" ")) {
+      setCurrWordIndex((index) => index + 1);
+      setUserInput("");
+      setIsWordCorrect(true);
+      handleCorrectIncorrectCount(true); // Increment correct count
+    } else {
+      setUserInput(value);
+      setIsWordCorrect(value.trim() === currentWord);
+      if (!isWordCorrect) {
+        handleCorrectIncorrectCount(false); // Increment incorrect count
+      }
     }
-    else {
-        setUserInput(value)
-        setIsWordCorrect(value.trim() === currentWord);
-    }
-
   }
+  const handleCorrectIncorrectCount = (isCorrect) => {
+    if (isCorrect) {
+      setCorrect((prevCorrect) => prevCorrect + 1);
+    } else {
+      setInCorrect((prevIncorrect) => prevIncorrect + 1);
+    }
+  };
 
-  function Start(){
-    console.log("hello")
-    let Interval = setInterval(() => {
+  function Start() {
+    InputRef.current.focus();
+    if (Status === "finished") {
+      setWords(Words);
+      setCurrWordIndex(0);
+      setCorrect(0);
+      setInCorrect(0);
+      // setCurrCharIndex(-1)
+    }
+
+    if (Status !== "started") {
+      setStatus("started");
+      let Interval = setInterval(() => {
         setCountDown((PrevCount) => {
-            if(PrevCount === 0 ){
-                clearInterval(Interval)
-            }
-        })
-
-        
-    }, 1000);
-
+          if (PrevCount === 0) {
+            clearInterval(Interval);
+            setStatus("finished");
+            setUserInput("");
+            return Seconds;
+          } else {
+            return PrevCount - 1;
+          }
+        });
+      }, 1000);
+    }
   }
 
   return (
@@ -73,26 +169,55 @@ const MainApp = () => {
             ProcessInput(e.target.value);
           }}
         />
-      
       </div>
       <div className=" flex justify-between items-center">
         <button onClick={Start}>Start Typing </button>
-        <p>Counter</p>
-      </div>
-      <div className="bg-blue-500 text-white border-1 border-black border-[1px] px-5 py-3 text-xl">
-        <div className="">
-          
-          {
-            Words.map((word, index) => {
-                if(index === currWordIndex){
-                    return <b className={` ${isWordCorrect ? 'bg-black text-white' : 'bg-red-600'}`} key={index}>{word} </b>
-                }
-                return <span key={index}>{word}  </span> 
-             
-            })
-          }
+        <div className="h-[40px] w-[40px] rounded-full bg-black border-orange-600 flex justify-center items-center">
+          <p className=" text-white text-xl">{CoundDown}</p>
         </div>
       </div>
+
+      {Status === "started" && (
+        <div className="bg-blue-500 text-white border-1 border-black border-[1px] px-5 py-3 text-xl">
+          <div className="">
+            {Words.map((word, index) => {
+              if (index === currWordIndex) {
+                return (
+                  <b
+                    className={` ${
+                      isWordCorrect ? "bg-black text-white" : "bg-red-600"
+                    }`}
+                    key={index}
+                  >
+                    {word}{" "}
+                  </b>
+                );
+              }
+              return <span key={index}>{word} </span>;
+            })}
+          </div>
+        </div>
+      )}
+      {Status === "finished" && (
+        <div className="section">
+          <div className="columns">
+            <div className="column has-text-centered">
+              <p className="is-size-5">Words per minute:</p>
+              <p className="text-black">{Correct}</p>
+            </div>
+            <div className="column has-text-centered">
+              <p className="is-size-5">Accuracy:</p>
+              {Correct !== 0 ? (
+                <p className="has-text-info is-size-1">
+                  {Math.round((Correct / (Correct + InCorrect)) * 100)}%
+                </p>
+              ) : (
+                <p className="has-text-info is-size-1">0%</p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
