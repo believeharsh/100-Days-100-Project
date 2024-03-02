@@ -103,8 +103,8 @@ const MainApp = () => {
 
   const [currWordIndex, setCurrWordIndex] = useState(0);
   const [isWordCorrect, setIsWordCorrect] = useState(true);
-  const [Correct, setCorrect] = useState();
-  const [InCorrect, setInCorrect] = useState();
+  const [Correct, setCorrect] = useState(0);
+  const [InCorrect, setInCorrect] = useState(0);
   const InputRef = useRef(null);
 
   function ProcessInput(value) {
