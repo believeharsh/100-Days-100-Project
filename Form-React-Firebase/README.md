@@ -1,8 +1,32 @@
-# React + Vite
+# Form-React-FireBase - A simple form in react which saves data on firebase. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![form-in-react - firebase](/public/Images/FormReactFirebase.png)
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone this repository: `git clone git@github.com:believeharsh/100-Days-100-Project.git`
+2. Navigate to the project directory: `cd Form-React-Firebase`
+3. Install dependencies: `npm install`
+4. Create a Firebase project by using real time databases.
+5. Run the app: `npm run dev`
+
+Happy reading with the Book Finder App! If you encounter any issues or have suggestions, feel free to open an issue or reach out to us. Enjoy exploring new literary worlds! 📖🌟
+
+## About the App
+
+This is the simple form in react which is styled using Tailwind css. It just take data and save on the firbase server as you hit the submit button.
+
+
+## Technologies Used
+
+- **React**: A popular JavaScript library for building user interfaces. It provides a dynamic and efficient way to create interactive components.
+
+- **Tailwind CSS**: A utility-first CSS framework that makes styling and designing your app a breeze. Customize the app's appearance with ease.
+
+- **Firebase**: Google's platform for building web and mobile applications. We use Firebase Authentication for user management and Firestore for data storage.
+
+
+## Note 
+
+Before hitting on the submit button, make sure the you have proper internet connection on your pc other wise you'll get an error on the console. 
+
