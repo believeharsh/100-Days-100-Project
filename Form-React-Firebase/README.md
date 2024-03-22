@@ -28,5 +28,5 @@ This is the simple form in react which is styled using Tailwind css. It just tak
 
 ## Note 
 
- - ** **: Before hitting on the submit button, make sure the you have proper internet connection on your pc other wise you'll get an error on the console. 
+ -  Before hitting on the submit button, make sure the you have proper internet connection on your pc other wise you'll get an error on the console. 
 
