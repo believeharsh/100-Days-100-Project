@@ -10,7 +10,7 @@
 4. Create a Firebase project by using real time databases.
 5. Run the app: `npm run dev`
 
-Happy reading with the Book Finder App! If you encounter any issues or have suggestions, feel free to open an issue or reach out to us. Enjoy exploring new literary worlds! 📖🌟
+
 
 ## About the App
 
@@ -28,5 +28,5 @@ This is the simple form in react which is styled using Tailwind css. It just tak
 
 ## Note 
 
-Before hitting on the submit button, make sure the you have proper internet connection on your pc other wise you'll get an error on the console. 
+ - ** **: Before hitting on the submit button, make sure the you have proper internet connection on your pc other wise you'll get an error on the console. 
 
